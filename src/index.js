@@ -7,4 +7,4 @@ import "./styles.css";
 // document.body.appendChild(image);
 
 
-console.log(greeting);
+console.log('hello');
