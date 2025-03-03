@@ -53,7 +53,7 @@ menuPage.addEventListener('click', ()=>{
     menu.classList.toggle('bold')
 })
 
-homePage.classList.toggle('bold')
 
+homePage.classList.toggle('bold')
 console.log(currentPage)
 createHome()

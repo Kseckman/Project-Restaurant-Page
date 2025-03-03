@@ -1,23 +1,30 @@
-{/* <h2>Content</h2>
-<p>words about page</p>
-<button>btn1</button>
-<button>btn2</button> */}
+import image from "./imgs/jason-leung-poI7DelFiVA-unsplash.jpg"
+
 const createHome = ()=>{
     const content = document.querySelector('.content')
     const head = document.createElement('h2')
     const par = document.createElement('p')
-    const btn1 = document.createElement('button')
-    const btn2 = document.createElement('button')
+    const hours = document.createElement('p')
+    const location = document.createElement('p')
+    const img = document.createElement('img')
+
+    img.src = image
+    head.classList = 'header'
+    par.classList = 'paragraph'
+    hours.classList = 'paragraph'
+    location.classList = 'paragraph'
+    img.classList = 'background-image'
     
-    head.textContent ='Content'
-    par.textContent = 'about page'
-    btn1.textContent = 'btn one'
-    btn2.textContent = 'btn two'
+    head.textContent ='Odins Bar and Grill'
+    par.textContent = 'Meat Mead and NPM'
+    hours.textContent = 'Open Monday through sat 9am to 10pm'
+    location.textContent = 'Find us past yggdrasil and across the bridge'
 
     content.appendChild(head)
     content.appendChild(par)
-    content.appendChild(btn1)
-    content.appendChild(btn2)
+    content.appendChild(hours)
+    content.appendChild(location)
+    content.appendChild(img)
 }
 
 export default createHome
